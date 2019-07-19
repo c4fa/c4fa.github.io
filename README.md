@@ -1,2 +1,2 @@
 # c4fa.github.io
-Codes for Fun and Arf (C4FA)
+Codes for Fun and Art (C4FA)

@@ -1344,12 +1344,27 @@ pre code {
   }
 }
 @media (min-width: 992px) {
-  .col-md-1, .col-md-01, .col-md-2, .col-md-23, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+  .col-md-1, .col-md-005, .col-md-01, .col-md-02, .col-md-03, .col-md-05, .col-md-04, .col-md-2, .col-md-23, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
   }
 
+  .col-md-005 {
+    width: 0.5%;
+  }
   .col-md-01 {
+    width: 1%;
+  }
+  .col-md-02 {
+    width: 2%;
+  }
+  .col-md-03 {
     width: 3%;
+  }
+  .col-md-04 {
+    width: 5%;
+  }
+  .col-md-05 {
+    width: 5%;
   }
   .col-md-1 {
     width: 8.33333%;

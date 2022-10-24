@@ -172,6 +172,9 @@ function draw() {
   text("NikB",width+overlay-50,20)
   strokeWeight(0);
   textAlign(CENTER, CENTER);
+  textSize(38);
+  fill(0);
+  text("V1",width+overlay-50,50)
   textSize(32);
   fill(0);
   text('N=',width+60, 60*6)

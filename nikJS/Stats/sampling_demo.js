@@ -23,7 +23,7 @@ let Px, S1x,S2x;
 let Psampl=false;
 let G1sampl=false;
 let G2sampl=false;
-let jitter=5;
+let jitter=0;
 let n=5
 let overlay=300
 
@@ -142,9 +142,9 @@ function setup() {
   checkboxP.position(width-170, 150);
   checkboxS1.position(width-170, 180);
   checkboxS2.position(width-170, 210);
-  checkboxP.style("font-size", "30px");
-  checkboxS1.style("font-size", "30px");
-  checkboxS2.style("font-size", "30px");
+  checkboxP.style("font-size", "25px");
+  checkboxS1.style("font-size", "25px");
+  checkboxS2.style("font-size", "25px");
   //checkboxP.changed(myCheckedEvent);
   const box1 = checkboxP.elt.getElementsByTagName('input')[0];
   box1.style.transform = 'scale(2)';
@@ -172,12 +172,17 @@ function draw() {
   text("NikB",width+overlay-50,20)
   strokeWeight(0);
   textAlign(CENTER, CENTER);
-  textSize(32);
+  textSize(38);
+  //stroke(0,255,0,20);
   fill(0);
+  text("V1",width+overlay-50,50)
+  //fill(0);
+  textSize(32);
+  stroke(0,0,0,20);
   text('N=',width+60, 60*6)
   n = int(input.value());
   //text(int(n),width-50, 60*7)
-
+  textSize(25);
   for (let i=0;i<Mues.length;i++){
       if (i==1){
         text('μ', Mues[i].x -20, Mues[i].y+10); //Sigmas
@@ -256,19 +261,26 @@ function draw() {
   strokeWeight(0);
   stroke(0);
   textAlign(CENTER, CENTER);
+  textSize(25);
+  let meanplot = false;
   if (Px.x.length>0) {
     fill(P.color[0],P.color[1],P.color[2]);
     //noFill();
     text('P ',50, height/2+100);
+    meanplot = true;
   }
   if (S1x.x.length>0){
     fill(S1.color[0],S1.color[1],S1.color[2]);
     text('G1',50, height/2+150);
+    meanplot = true;
   }
   if (S2x.x.length>0){
     fill(S2.color[0],S2.color[1],S2.color[2]);
     text('G2',50, height/2+200);
+    meanplot = true;
   }
+
+
 
   P.plotSamples_Y(Ylevel=height-100,Xlevel=width+90,r=[20,20],alphax=60)
   S1.plotSamples_Y(Ylevel=height-100,Xlevel=width+140,r=[20,20],alphax=60)
@@ -282,7 +294,10 @@ function draw() {
   //translate(100, 180);
   rotate(angle1);
   // Draw the letter to the screen
-  text("values", -width/2, (width+20));
+  text("values", -(height/2+150), (width+20));
+  textSize(25);
+  if (meanplot){
+  text('means',-(height/2+150), 18);}
   //line(0, 0, 150, 0);
   //line(-(width+200), -height, -width+200,  -height/2);
   textSize(45);

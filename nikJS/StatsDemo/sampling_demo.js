@@ -26,6 +26,8 @@ let G2sampl=false;
 let jitter=0;
 let n=5
 let overlay=300
+let NN=200;
+let sd_rang=5;
 
 function setup() {
   //createCanvas(1024, 800);
@@ -45,9 +47,9 @@ function setup() {
     }
     SD.style('width', '100px');
     if (i>1){
-      MEAN = createSlider(-5, 5,-1,0.5);
+      MEAN = createSlider(-5, 5,-1,0.25);
     }else{
-      MEAN = createSlider(-5, 5, i,0.5);}
+      MEAN = createSlider(-5, 5, i,0.25);}
     MEAN.style('width', '100px');
 
     AM.style('width', '100px');
@@ -199,7 +201,7 @@ function draw() {
   let v
   if (checkboxP.checked()){
     P = new NormSampler(mu=Mues[0].value(),sigma=Sigmas[0].value(),scaley= Scales[0].value(),
-                       N=100,sd_rang=5,colorx=[0,0,0]);
+                       N=NN,sd_rang=sd_rang,colorx=[0,0,0]);
     //P.getSamples(n=5);
     P.plotCurve(height/2)
     //P.plotSamples(Ylevel=height/2)
@@ -218,7 +220,7 @@ function draw() {
 
   if (checkboxS1.checked()){
     S1 = new NormSampler(mu=Mues[2].value(),sigma=Sigmas[2].value(),scaley= Scales[2].value(),
-                       N=100,sd_rang=5,colorx=[0,255,0]);
+                       N=NN,sd_rang=sd_rang,colorx=[0,255,0]);
     //S1.getSamples(n=5);
     S1.plotCurve(height/2);
     //S1.plotSamples(Ylevel=height/2);
@@ -239,7 +241,7 @@ function draw() {
 
   if (checkboxS2.checked()){
   S2 = new NormSampler(mu=Mues[1].value(),sigma=Sigmas[1].value(),scaley= Scales[1].value(),
-                     N=100,sd_rang=5,colorx=[0,0,255]);
+                     N=NN,sd_rang=sd_rang,colorx=[0,0,255]);
   //S2.getSamples(n=5);
   S2.plotCurve(height/2)
   //S2.plotSamples(Ylevel=height/2)

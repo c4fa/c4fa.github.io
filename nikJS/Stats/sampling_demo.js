@@ -177,7 +177,7 @@ function draw() {
   textSize(38);
   //stroke(0,255,0,20);
   fill(0);
-  text("V1",width+overlay-50,50)
+  text("V1.1",width+overlay-50,50)
   //fill(0);
   textSize(32);
   stroke(0,0,0,20);

@@ -222,8 +222,8 @@ function draw() {
    // }
 
    if (Resample){
-   S1 = new NormSampler(mu=M1.value(),sigma=SD1.value()/sd_rang,scaley= 100*scalN1, N=1000,sd_rang=sd_rang,colorx=[0,255,0]);
-   S2 = new NormSampler(mu=M2.value(),sigma=SD2.value()/sd_rang,scaley= 100*scalN2, N=1000,sd_rang=sd_rang,colorx=[0,0,255]);
+   S1 = new NormSampler(mu=M1.value(),sigma=SD1.value()/sd_rang,scaley= 200*scalN1, N=1000,sd_rang=sd_rang,colorx=[0,255,0]);
+   S2 = new NormSampler(mu=M2.value(),sigma=SD2.value()/sd_rang,scaley= 200*scalN2, N=1000,sd_rang=sd_rang,colorx=[0,0,255]);
    }
 
    S1.plotCurve(height/2-100);

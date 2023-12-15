@@ -37,7 +37,10 @@ function preload(){
 	BackS.loop();
 }
 function setup() {
-	createCanvas(800,600);
+	//createCanvas(800,600);
+	var cnv = createCanvas(800,600);
+	var shiftX = (windowWidth-800)/2;
+	cnv.position(shiftX,0);
 	frameRate(500);
 	GameStarted = false
 	GameEnded =false;

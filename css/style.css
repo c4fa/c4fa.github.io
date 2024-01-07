@@ -1292,3 +1292,45 @@ input[type="text"] {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+
+.gallary-card-nb{
+  background-color: #fffdfd;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 1);
+  border-radius: 1rem;
+  border-left: 1px solid !important;
+  border-right: 1px solid !important;
+  border-top: 1px solid !important;
+  border-bottom: 1px solid !important;
+  cursor: pointer;
+  /* display: -ms-flexbox; */
+  /* display: flex; */
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  position: relative;
+  overflow: hidden;
+  word-wrap: break-word;
+  font-size: 14px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 10px;
+  box-shadow: 3px 3px 10px #545454;
+  transition: box-shadow 0.15s;
+
+
+}
+
+.gallary-card-nb:hover{
+  /* opacity: 0.8; */
+  box-shadow: 5px 5px 4px #68191990;
+}
+
+
+.column-box{
+  display: inline-block;
+  width:fit-content;
+  
+}
+

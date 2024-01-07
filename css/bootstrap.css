@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  margin: 0;
+  margin: 10px;
 }
 
 article,
@@ -29,7 +29,12 @@ nav,
 section,
 summary {
   display: block;
+  padding-left: 10px;
+  padding-right: 10px;
 }
+
+
+
 
 audio,
 canvas,
@@ -137,11 +142,16 @@ select,
 textarea {
   color: inherit;
   font: inherit;
-  margin: 0;
+  margin: 5px;
 }
 
 button {
   overflow: visible;
+  color:rgb(255, 255, 255);
+  background-color: #19b0e2;
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
 }
 
 button,

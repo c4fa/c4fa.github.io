@@ -1323,7 +1323,7 @@ input[type="text"] {
 }
 
 .gallary-card-nb:hover{
-  /* opacity: 0.8; */
+  opacity: 0.7;
   box-shadow: 5px 5px 4px #68191990;
 }
 

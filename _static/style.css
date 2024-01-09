@@ -1188,14 +1188,17 @@ section {
 }
 
 .header__content {
-  position: relative
+  position: relative;
+  /* display:none; */
 }
 
 @media only screen and (min-width:1024px) {
   .header__content {
     position: absolute;
     bottom: 0;
+    /* padding: 40px 40px 34px; */
     padding: 40px 40px 34px 10px;
+    /* display:inline-block; */
   }
 }
 

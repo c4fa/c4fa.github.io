@@ -151,7 +151,15 @@ button {
   background-color: #19b0e2;
   border-radius: 10px;
   padding: 10px;
-  border: none;
+  border: solid;
+  border-color: black;
+}
+
+button:hover{
+  /* border: solid; */
+  /* border-radius: 15px; */
+  background-color: #ffffff;
+  color:#19b0e2;
 }
 
 button,

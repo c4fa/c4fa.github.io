@@ -1111,7 +1111,10 @@ section {
   bottom: 0;
   right: 0;
   background-size: cover;
-  background-position: center;
+  /* background-position: center; */
+  /* background-position: center top; */
+  /* NIKB */
+  background-position: 50% 35%;
   background-repeat: no-repeat;
   opacity: 0;
   -webkit-transition: opacity .4s ease-in-out;

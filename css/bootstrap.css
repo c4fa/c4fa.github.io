@@ -544,6 +544,28 @@ p {
   }
 }
 
+/* NIKB */
+@media (max-width: 768px) {
+  h2, .h2 {
+    font-size: 85%;
+    /* width: 20px; */
+  }
+  h3, .h3 {
+    font-size: 85%;
+  }
+}
+
+@media (max-width: 800px) {
+  h2, .h2 {
+    font-size: 90%;
+    /* width: 20px; */
+  }
+  h3, .h3 {
+    font-size: 90%;
+  }
+}
+/* NIKB */
+
 small,
 .small {
   font-size: 85%;

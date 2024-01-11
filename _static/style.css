@@ -1360,6 +1360,25 @@ section {
   transform: rotate(-45deg)
 }
 
+.menu__wrap {
+  position: fixed;
+  z-index: 90;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(22, 27, 33, .95);
+  overflow: auto;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out
+}
+
+
 .header__content_small {
   position: fixed;
   z-index: 90;

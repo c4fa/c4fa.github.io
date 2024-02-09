@@ -423,6 +423,28 @@ function ArrowKeys(k0,k1){
 	}
 }
 
+function keyPressed() {
+  if (keyCode == UP_ARROW) {
+    var ai = 0;
+	var aj = -1;
+	S1.ChangeDirection(ai,aj);
+
+  } else if (keyCode == DOWN_ARROW) {
+    var ai = 0;
+	var aj = 1;
+	S1.ChangeDirection(ai,aj);
+  }else if (keyCode == LEFT_ARROW) {
+    var ai = -1;
+	var aj = 0;
+	S1.ChangeDirection(ai,aj);
+  }else if (keyCode == RIGHT_ARROW) {
+    var ai = 1;
+	var aj = 0;
+	S1.ChangeDirection(ai,aj);
+  }
+  
+}
+
 
 function Snake(x,y,ax,ay,speed,l,r,playr){
 	this.x  = x
